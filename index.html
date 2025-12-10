@@ -1,32 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-
-  <script>
-    // 1. Avvia Rust tramite Steam
-    function openRust() {
-      window.location.href = "steam://run/252490";
-    }
-
-    // 2. Dopo un ritardo, connette al server
-    function connectToServer() {
-      window.location.href = "steam://connect/long.rustoria.uk:28010";
-    }
-
-    // Avvio automatico
-    window.onload = function() {
-      openRust();
-      // Aspetta 6 secondi prima del connect (modificabile)
-      setTimeout(connectToServer, 6000);
-    };
-  </script>
-</head>
-
-<body>
-  <h2>Apertura Rust…</h2>
-  <p>Se non si apre automaticamente:</p>
-  <p><a href="steam://run/252490">Apri Rust</a></p>
-  <p><a href="steam://connect/long.rustoria.uk:28010">Entra nel server</a></p>
-</body>
-</html>
+<a href="steam://connect/long.rustoria.uk:28010">
+    Clicca qui per connetterti al server Rust
+</a>
